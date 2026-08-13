@@ -1,7 +1,7 @@
 # 小说存稿项目模板
 
 ## 依赖
-- [VSCode](https://code.visualstudio.com/)
+- [VS Code](https://code.visualstudio.com/)
 - [Noveler](https://marketplace.visualstudio.com/items?itemName=zerozawa.noveler)
 - [Python](https://www.python.org/downloads/)
 
@@ -9,6 +9,7 @@
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 - [Spreadsheet Viewer](https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer)
+- [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)（VS Code 内置）
 
 ## 功能
 ### 关键词高亮并提示
@@ -28,3 +29,6 @@
 
 ### 章节大纲
 - 在[.noveler/outlines/](.noveler/outlines/)目录中编辑`章节文件名.md`文件，在“NOVELER”视图查看大纲。
+
+### Copilot
+- ~~在VS Code中使用强大的AI工具交互式生成小说内容。~~
