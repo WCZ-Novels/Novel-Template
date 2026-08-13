@@ -1,0 +1,102 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "执行敏感词检查",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                ".scripts/filter_sensitive_words.py",
+                ".",
+                "--vscode-problems"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                {
+                    "owner": "sensitive-scan",
+                    "source": "敏感词检查",
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}"
+                    ],
+                    "pattern": {
+                        "regexp": "^(.+):(\\d+):(\\d+)-(\\d+):\\s+(warning|error):\\s+(.+)$",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "endColumn": 4,
+                        "severity": 5,
+                        "message": 6
+                    }
+                }
+            ]
+        },
+        {
+            "label": "执行敏感词检查（含单字）",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                ".scripts/filter_sensitive_words.py",
+                ".",
+                "--include-single-char",
+                "--vscode-problems"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": [
+                {
+                    "owner": "sensitive-scan",
+                    "source": "敏感词检查",
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}"
+                    ],
+                    "pattern": {
+                        "regexp": "^(.+):(\\d+):(\\d+)-(\\d+):\\s+(warning|error):\\s+(.+)$",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "endColumn": 4,
+                        "severity": 5,
+                        "message": 6
+                    }
+                }
+            ]
+        },
+        {
+            "label": "执行字数统计",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                ".scripts/count_words.py",
+                "."
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

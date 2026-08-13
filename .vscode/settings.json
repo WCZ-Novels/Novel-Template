@@ -1,0 +1,75 @@
+{
+    "[plaintext]": {
+        "editor.wrappingIndent": "none",
+        "editor.autoIndent": "none",
+        "editor.wordWrap": "bounded"
+    },
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnPaste": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "noveler.autoIndentLines": 1,
+    "git.enableSmartCommit": true,
+    "noveler.usePangu": false,
+    "editor.minimap.size": "fill",
+    "editor.minimap.showSlider": "always",
+    "noveler.customHighlight": {
+        "\\d+(\\.\\d+)?": {
+            "color": "#11eebb"
+        },
+        "《.*?》": {
+            "color": "#bb7766"
+        }
+    },
+    "noveler.confCSVFiles": [
+        {
+            "path": ".noveler/config/人物.csv",
+            "key": "姓名",
+            "hoverKey": "信息",
+            "decorationRenderOptions": {
+                "color": "#eeb53f"
+            }
+        },
+        {
+            "path": ".noveler/config/组织.csv",
+            "key": "名称",
+            "hoverKey": "信息",
+            "decorationRenderOptions": {
+                "color": "#5599ff"
+            }
+        },
+        {
+            "path": ".noveler/config/地点.csv",
+            "key": "地名",
+            "hoverKey": "信息",
+            "decorationRenderOptions": {
+                "color": "#ee1122"
+            }
+        },
+        {
+            "path": ".noveler/config/道具.csv",
+            "key": "名称",
+            "hoverKey": "信息",
+            "decorationRenderOptions": {
+                "color": "#22ee77"
+            }
+        },
+        {
+            "path": ".noveler/config/术语.csv",
+            "key": "名称",
+            "hoverKey": "信息",
+            "decorationRenderOptions": {
+                "color": "#9977ee"
+            }
+        },
+        {
+            "path": ".noveler/config/服装与颜色.csv",
+            "key": "名称",
+            "hoverKey": "信息",
+            "decorationRenderOptions": {
+                "color": "#ee44bb"
+            }
+        },
+    ],
+    "noveler.confTXTFiles": []
+}
